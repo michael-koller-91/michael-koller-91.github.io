@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "How to print floating-point numbers accurately"
 date: 2023-03-26
 ---
