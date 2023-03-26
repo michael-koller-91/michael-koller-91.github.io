@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "How to print floating-point numbers accurately"
+title: "How to print floating-point numbers: A review of the Dragon 2 algorithm"
 date: 2023-03-26
 ---
 
-# How to print floating-point numbers<br />(A review of the Dragon 2 algorithm)
+# How to print floating-point numbers:<br />A review of the Dragon 2 algorithm
 
 Decimal numbers like `0.21` do not have an exact representation by means of a finite-length binary number.
 In Python, we can see the best approximation of `0.21` by means of a double-precision floating-point number (a `double`) by printing `0.21` with large precision:
