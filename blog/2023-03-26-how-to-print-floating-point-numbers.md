@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "How to print floating-point numbers: A review of the Dragon 2 algorithm"
+title: "How to print floating-point numbers"
 date: 2023-03-26
 ---
 
-# How to print floating-point numbers:<br />A review of the Dragon 2 algorithm
+# A review of the Dragon 2 algorithm
 
 Decimal numbers like `0.21` do not have an exact representation by means of a finite-length binary number.
 In Python, we can see the best approximation of `0.21` by means of a double-precision floating-point number (a `double`) by printing `0.21` with large precision:
@@ -113,7 +113,7 @@ with a precision of $n$.
 We can alternatively say that we want to print a number in the interval $[0, 1[$
 that has an $n$ bits long fractional part.
 Such a number has the form
-$0.f_1 f_2 \dots f_n$ with bits $f_k \in \{ 0, 1 \}$.
+$0.f_1 f_2 \dots f_n$ with bits $f_k \in \\{ 0, 1 \\}$.
 This is also known as an $n$-bit fixed-point number.
 Its decimal value is given by $\sum_{k=1}^n f_k \cdot 2^{-k}$.
 For instance, the binary number $f = 0.01111101$ with $n = 8$ has the decimal value $f = 0.48828125$.
@@ -143,7 +143,7 @@ and prints $0.49$ as its output.
 
 **Goal:**
 We give an $n$-bit fixed-point number $f \in [0, 1[$ and $n$ to the algorithm
-and it prints a decimal number $0.F_1 F_2 \dots F_N$ with $F_{k} \in \{0, 1, \dots, 9\}$.
+and it prints a decimal number $0.F_1 F_2 \dots F_N$ with $F_{k} \in \\{0, 1, \dots, 9\\}$.
 The number of digits, $N$, is determined by the algorithm and is as small as possible.
 
 We develop the algorithm using the example $f = 0.48828125$ and $n = 8$.
