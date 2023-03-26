@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Michael's Site
+title: Michael's Page
 ---
 
 # Blog
