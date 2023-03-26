@@ -1,6 +1,6 @@
 ---
 title: "How to print floating-point numbers accurately"
-date: 2023-03-24
+date: 2023-03-26
 ---
 
 # How to print floating-point numbers<br />(A review of the Dragon 2 algorithm)
