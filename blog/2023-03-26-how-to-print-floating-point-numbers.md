@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "How to print floating-point numbers"
+description: "This is a test description"
 date: 2023-03-26
 ---
 
@@ -300,3 +301,5 @@ _Grisu_ and _Ryu_ both of which refer to particular dragons and there is the git
 [Drachennest](https://github.com/abolz/Drachennest) (German for _dragon nest_) which collects floating-point printing algorithms.
 The linked paper as well as the github repository are good starting points for the reader
 who would like to know more about the interesting printing topic.
+
+[back](./)
