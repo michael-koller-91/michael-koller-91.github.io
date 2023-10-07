@@ -1,3 +1,3 @@
-# My Github Page Repository
+# My GitHub Page Repository
 
 [michael-koller-91.github.io](https://michael-koller-91.github.io/)
