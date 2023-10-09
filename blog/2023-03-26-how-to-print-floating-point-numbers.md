@@ -6,8 +6,10 @@ date: 2023-03-26
 
 # A review of the Dragon 2 algorithm
 
+(If equations aren't displayed properly, please reload the page.)
+
 Decimal numbers like `0.21` do not have an exact representation by means of a finite-length binary number.
-In Python, we can see the best approximation of `0.21` by means of a double-precision floating-point number (a `double`) by printing `0.21` with large precision:
+In Python, we can see the best approximation of `0.21` by means of a double-precision floating-point number by printing `0.21` with large precision:
 ```python
 >>> nr = 0.21
 >>> print(f'{nr:.100}')
