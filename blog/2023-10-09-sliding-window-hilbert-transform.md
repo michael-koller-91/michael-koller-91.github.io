@@ -166,5 +166,6 @@ def sliding_window_hilbert_v2(x, N):
 
 Note, since for loops are very slow in Python,
 it makes sense to just-in-time-compile this function using `numba` for example.
+An example can be found in [my github repository](https://github.com/michael-koller-91/sliding_hilbert_transform).
 
 [back](./../)
