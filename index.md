@@ -5,6 +5,8 @@ title: Michael's Page
 
 # Blog
 
+[Solving submodule pointer git rebase conflicts](./blog/2025-05-27-solving-submodule-pointer-rebase-conflicts.md)
+
 [Sliding window Hilbert transform: A derivation](./blog/2023-10-09-sliding-window-hilbert-transform.md)
 
 [How to build NumPy from source with Intel MKL: Instructions for Ubuntu](./blog/2023-10-07-how-to-build-numpy-from-source-with-intel-mkl.md)
