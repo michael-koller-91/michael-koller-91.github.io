@@ -11,7 +11,7 @@ One repository called `super` and one repository called `sub` which is a submodu
 In each repository, we have both a main and a dev branch.
 
 The graph of `sub` looks as follows:
-```git
+```
 * 96ccceb (HEAD -> dev) s5
 * feb588c s4
 | * 2865633 (main) s3
@@ -23,7 +23,7 @@ The main branch consists of the three commits with commit messages "s1", "s2", a
 Branch dev was created off commit "s2" and has the two commits "s4" and "s5".
 
 The graph of `super` looks like this:
-```git
+```
 * 2e0bb3b (HEAD -> dev) m6: s5
 * 9112274 m5
 * ca7130a m4: s4
@@ -39,7 +39,7 @@ For example, "m1: s1" means that with this commit, the submodule `sub` was check
 And "m6: s5" means that with this commit, the submodule `sub` was checked out at commit "s5".
 
 If we `git rebase main` in `sub`, we get the following graph:
-```git
+```
 * ca00e6c (HEAD -> dev) s5
 * f1bb5d6 s4
 * 2865633 (main) s3
@@ -51,7 +51,7 @@ The commit hash of "s4" used to be `feb588c` but now it's `f1bb5d6`.
 Similarly, the commit hash of "s5" used to be `96ccceb` but now it's `ca00e6c`.
 
 The fact that the commit "s4", which `super` refers to in its commit "m4: s4", now de-facto no longer exist, leads to a problem when we run `git rebase main` in `super`:
-```git
+```
 Failed to merge submodule sub
 CONFLICT (submodule): Merge conflict in sub
 error: could not apply ca7130a... m4: s4
@@ -76,12 +76,12 @@ cd sub
 git checkout f1bb5d6
 cd ..
 git add sub
-git commit --no-edit
+git commit
 git rebase --continue
 ```
 Now "m4: s4" points to "s4" again, the conflict is solved, we can continue rebasing.
 Rebasing "m5" will not lead to a problem but the last commit "m6: s5" will give as a merge conflict again:
-```git
+```
 Failed to merge submodule sub (commits don't follow merge-base)
 CONFLICT (submodule): Merge conflict in sub
 error: could not apply 2e0bb3b... m6: s5
@@ -94,11 +94,11 @@ cd sub
 git checkout ca00e6c
 cd ..
 git add sub
-git commit --no-edit
+git commit
 git rebase --continue
 ```
 This finishes the rebase successfully and we end up with the following graph in `super`:
-```git
+```
 * c5cecb2 (HEAD -> dev) m5
 * 91666f7 m4: s4
 * 2230920 (main) m3: s3
@@ -123,26 +123,31 @@ In what follows, we'll write two useful git aliases that help us solve the descr
 Here's what we'll do:
 1. Before we rebase in `sub`, we find all commits on `sub`'s dev branch to which a commit in `super`'s dev branch points.
     * In our example, we would find the commits "s4" and "s5".
+
 2. For every such commit, we make a new branch pointing to it. The branch name will contain the (pre-rebase) commit hash.
     * In our example, we would create two branches: pre-rebase-feb588c and pre-rebase-96ccceb
+
 3. We rebase in `sub` with the command `git rebase main --update-refs`. The argument `--update-refs` force-updates all branches that point to commits that are being rebased.
     * In our example, this would lead to the following `sub` graph:
-        ```git
+        ```
         * ca00e6c (HEAD -> dev, pre-rebase-96ccceb) s5
         * f1bb5d6 (pre-rebase-feb588c) s4
         * 2865633 (main) s3
         * a3f0de6 s2
         * a5dfe38 s1
         ```
-4. Whenever we get a submodule pointer merge conflict while rebasing in `super`, we get the old `sub`-commit to which the conflicting `super`-commit points, we find the corresponding `pre-rebase`-branch, and the commit to which the branch is pointing is the commit to which `super` should be pointing to solve the conflict.
-    * In our example, when we do `git rebase dev` in `super`, we get a merge conflict while rebasing "m4: s4". Git tells us that we have a submodule merge problem. So we get the commit hash `feb588c` to which "m4: s4" is currently pointing (we'll see how in a minute), then we find the corresponding branch `pre-rebase-feb588c` in the graph and read off `f1bb5d6` as the new commit hash for `feb588c`.
+
+4. Whenever we get a submodule pointer merge conflict while rebasing in `super`, we get the old `sub`-commit to which the conflicting `super`-commit points, we find the corresponding `pre-rebase`-branch, and then the commit to which the branch is pointing is the commit to which `super` should be pointing to solve the conflict.
+    * In our example, when we do `git rebase main` in `super`, we get a merge conflict while rebasing "m4: s4". Git tells us that we have a submodule merge problem. So we get the commit hash `feb588c` to which "m4: s4" is currently pointing (we'll see how in a minute), then we find the corresponding branch `pre-rebase-feb588c` in the graph and read off `f1bb5d6` as the new commit hash for `feb588c`.
+
 5. Now that we have the new commit hash, we solve the merge conflict and continue rebasing.
     * In our example, we would
-        ```git
+        ```bash
         cd sub
         git checkout f1bb5d6
         cd ..
         git add sub
+        git commit
         git rebase --continue
         ```
 
@@ -243,7 +248,7 @@ The commit to which a branch points is given by `rev-parse`.
 # in sub
 cd sub
 # iterate through all branches starting with pre-rebase-
-for branch in $(git branch --list "x-pr-*"); do
+for branch in $(git branch --list "pre-rebase-*"); do
     # and print the branch name as well as the commit to which it points
     echo "old commit hash: $branch  --  new commit hash: $(git rev-parse $branch)"
 done
@@ -257,6 +262,12 @@ We can wrap the two helpers that we derived into git aliases.
 A git alias needs to be added to the alias section in the .gitconfig file.
 I call my two aliases `prepare-rebase-branches` and `list-rebase-branches`.
 They can be found [here](https://github.com/michael-koller-91/.dotfiles/blob/main/.gitconfig).
+In our example, they would be used as follows:
+```bash
+git prepare-rebase-branches dev sub main
+git list-rebase-branches sub
+```
+Note that `sub` needs to be the relative path to the submodule.
 
 # Bonus: Add a submodule pointer without doing a checkout in the submodule
 
