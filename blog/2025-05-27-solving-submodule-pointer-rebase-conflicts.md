@@ -129,6 +129,7 @@ Here's what we'll do:
 
 3. We rebase in `sub` with the command `git rebase main --update-refs`. The argument `--update-refs` force-updates all branches that point to commits that are being rebased.
     * In our example, this would lead to the following `sub` graph:
+
         ```
         * ca00e6c (HEAD -> dev, pre-rebase-96ccceb) s5
         * f1bb5d6 (pre-rebase-feb588c) s4
@@ -142,6 +143,7 @@ Here's what we'll do:
 
 5. Now that we have the new commit hash, we solve the merge conflict and continue rebasing.
     * In our example, we would
+
         ```bash
         cd sub
         git checkout f1bb5d6
