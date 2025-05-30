@@ -99,7 +99,8 @@ git rebase --continue
 ```
 This finishes the rebase successfully and we end up with the following graph in `super`:
 ```
-* c5cecb2 (HEAD -> dev) m5
+* d24c8c2 (HEAD -> dev) m6: s5
+* c5cecb2 m5
 * 91666f7 m4: s4
 * 2230920 (main) m3: s3
 * fb9be25 m2
