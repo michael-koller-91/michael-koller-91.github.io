@@ -17,6 +17,8 @@ title: Michael's Page
 
 [Execution Timer](https://github.com/michael-koller-91/execution-timer)
 
+[Filesearch](https://github.com/michael-koller-91/filesearch)
+
 [Gaussian Mixture Model Estimator](https://github.com/michael-koller-91/gmm-estimator)
 
 [Generalized Memory Polynomials](https://github.com/michael-koller-91/generalized_memory_polynomial)
