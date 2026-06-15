@@ -17,6 +17,14 @@ title: Michael's Page
 
 [Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
 
+[Mic Spectrum](https://github.com/michael-koller-91/mic-spectrum)
+
+<img src="https://raw.githubusercontent.com/michael-koller-91/mic-spectrum/refs/heads/main/screenshot.png" alt="Mic Spectrum" title="Mic Spectrum" style="max-width: 100%; height: auto;" />
+
+[Record Playback](https://github.com/michael-koller-91/record-playback)
+
+<img src="https://raw.githubusercontent.com/michael-koller-91/record-playback/refs/heads/main/screenshot.png" alt="Record Playback" title="Record Playback" style="max-width: 100%; height: auto;" />
+
 [Binary Visualization](https://github.com/michael-koller-91/binary-visualization)
 
 <img src="https://raw.githubusercontent.com/michael-koller-91/binary-visualization/refs/heads/main/screenshot.png" alt="Binary Visualization" title="Binary Visualization" style="max-width: 100%; height: auto;" />
