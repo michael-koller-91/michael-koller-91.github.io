@@ -26,6 +26,7 @@ title: Michael's Page
 [Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
 
 [Productivity Clock](https://github.com/michael-koller-91/productivity-clock)
+<img src="https://raw.githubusercontent.com/michael-koller-91/productivity-clock/refs/heads/master/productivity_clock_running.png" alt="Productivity Clock" title="Productivity Clock" style="max-width: 100%; height: auto;" />
 
 [Sliding Hilbert Transform](https://github.com/michael-koller-91/sliding_hilbert_transform)
-<img src="https://raw.githubusercontent.com/michael-koller-91/sliding_hilbert_transform/refs/heads/main/example.png" alt="Example Transform" title="Example Transform" style="max-width: 100%; height: auto;" />
+<img src="https://raw.githubusercontent.com/michael-koller-91/sliding_hilbert_transform/refs/heads/main/example.png" alt="Sliding Hilbert Transform" title="Sliding Hilbert Transform" style="max-width: 100%; height: auto;" />
