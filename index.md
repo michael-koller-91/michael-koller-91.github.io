@@ -15,18 +15,22 @@ title: Michael's Page
 
 # GitHub Repositories
 
+[Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
+
+[Binary Visualization](https://github.com/michael-koller-91/binary-visualization)
+
+<img src="https://raw.githubusercontent.com/michael-koller-91/binary_visualization/refs/heads/main/screenshot.png" alt="Binary Visualization" title="Binary Visualization" style="max-width: 100%; height: auto;" />
+
 [Execution Timer](https://github.com/michael-koller-91/execution-timer)
-
-[Filesearch](https://github.com/michael-koller-91/filesearch)
-
-[Gaussian Mixture Model Estimator](https://github.com/michael-koller-91/gmm-estimator)
 
 [Generalized Memory Polynomials](https://github.com/michael-koller-91/generalized_memory_polynomial)
 
-[Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
-
-[Productivity Clock](https://github.com/michael-koller-91/productivity-clock)
-<img src="https://raw.githubusercontent.com/michael-koller-91/productivity-clock/refs/heads/master/productivity_clock_running.png" alt="Productivity Clock" title="Productivity Clock" style="max-width: 100%; height: auto;" />
+[Gaussian Mixture Model Estimator](https://github.com/michael-koller-91/gmm-estimator)
 
 [Sliding Hilbert Transform](https://github.com/michael-koller-91/sliding_hilbert_transform)
+
 <img src="https://raw.githubusercontent.com/michael-koller-91/sliding_hilbert_transform/refs/heads/main/example.png" alt="Sliding Hilbert Transform" title="Sliding Hilbert Transform" style="max-width: 100%; height: auto;" />
+
+[Productivity Clock](https://github.com/michael-koller-91/productivity-clock)
+
+<img src="https://raw.githubusercontent.com/michael-koller-91/productivity-clock/refs/heads/master/productivity_clock_running.png" alt="Productivity Clock" title="Productivity Clock" style="max-width: 100%; height: auto;" />
