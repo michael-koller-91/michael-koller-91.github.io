@@ -19,7 +19,11 @@ title: Michael's Page
 
 [Binary Visualization](https://github.com/michael-koller-91/binary-visualization)
 
-<img src="https://raw.githubusercontent.com/michael-koller-91/binary_visualization/refs/heads/main/screenshot.png" alt="Binary Visualization" title="Binary Visualization" style="max-width: 100%; height: auto;" />
+<img src="https://raw.githubusercontent.com/michael-koller-91/binary-visualization/refs/heads/main/screenshot.png" alt="Binary Visualization" title="Binary Visualization" style="max-width: 100%; height: auto;" />
+
+[wo](https://github.com/michael-koller-91/wo)
+
+A command line tool written in Odin to search for files and file contents using regex patterns
 
 [Execution Timer](https://github.com/michael-koller-91/execution-timer)
 
