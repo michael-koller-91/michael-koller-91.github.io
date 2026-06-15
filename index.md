@@ -28,4 +28,4 @@ title: Michael's Page
 [Productivity Clock](https://github.com/michael-koller-91/productivity-clock)
 
 [Sliding Hilbert Transform](https://github.com/michael-koller-91/sliding_hilbert_transform)
-<img src="https://github.com/michael-koller-91/sliding_hilbert_transform/blob/main/example.png">
+![Example](https://github.com/michael-koller-91/sliding_hilbert_transform/blob/main/example.png)
