@@ -17,9 +17,15 @@ title: Michael's Page
 
 [Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
 
+Repository of this website
+
 [Mic Spectrum](https://github.com/michael-koller-91/mic-spectrum)
 
 <img src="https://raw.githubusercontent.com/michael-koller-91/mic-spectrum/refs/heads/main/screenshot.png" alt="Mic Spectrum" title="Mic Spectrum" style="max-width: 100%; height: auto;" />
+
+[FFTW3 Odin Bindings](https://github.com/michael-koller-91/fftw3-odin-bindings)
+
+Odin Bindings for the C library FFTW3 (Fastest Fourier Transform in the West)
 
 [Record Playback](https://github.com/michael-koller-91/record-playback)
 
@@ -35,9 +41,15 @@ A command line tool written in Odin to search for files and file contents using 
 
 [Execution Timer](https://github.com/michael-koller-91/execution-timer)
 
+A wrapper around Python's timeit module to compare function execution times
+
 [Generalized Memory Polynomials](https://github.com/michael-koller-91/generalized_memory_polynomial)
 
+A Python implementation of generalized memory polynomials
+
 [Gaussian Mixture Model Estimator](https://github.com/michael-koller-91/gmm-estimator)
+
+A GMM-based estimator for complex-valued linear inverse problems
 
 [Sliding Hilbert Transform](https://github.com/michael-koller-91/sliding_hilbert_transform)
 
