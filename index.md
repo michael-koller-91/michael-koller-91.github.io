@@ -13,6 +13,10 @@ title: Michael's Page
 
 [How to print floating-point numbers: A review of the Dragon 2 algorithm](./blog/2023-03-26-how-to-print-floating-point-numbers.md)
 
+# Web App
+
+[Fast Math](https://michael-koller-91.github.io/fast-math)
+
 # GitHub Repositories
 
 [Michael's Page](https://github.com/michael-koller-91/michael-koller-91.github.io)
