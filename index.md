@@ -16,6 +16,7 @@ title: Michael's Page
 # Web App
 
 [Fast Math](https://michael-koller-91.github.io/fast-math)
+[Minesweeter](https://michael-koller-91.github.io/minesweeter)
 
 # GitHub Repositories
 
